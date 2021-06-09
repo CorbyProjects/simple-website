@@ -1,0 +1,103 @@
+/* 
+	only stuff specific to bonsai app
+*/
+
+img {
+	display: inline-block;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/* #editProfileSection {
+	display: none;
+} */
+
+h2 {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+/* ********
+	ASIDE 
+******** */
+
+
+section {
+			
+	background-image: url("../img/IMG_20160320_131342508.jpg");
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.6)),to(rgba(0,0,0,0.6))), url("../img/IMG_20160320_131342508.jpg");
+	background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/IMG_20160320_131342508.jpg");
+	background-image: -o-linear-gradient(top, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/IMG_20160320_131342508.jpg");
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/IMG_20160320_131342508.jpg");
+	background-size: cover;	
+	background-attachment: fixed;
+}
+
+
+/* ********
+	PAGE CONTENT 
+******** */
+
+article {
+	background-image: url("../img/IMAG0075.jpg");
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.6)),to(rgba(0,0,0,0.6))), url("../img/IMAG0075.jpg");
+	background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/IMAG0075.jpg");
+	background-image: -o-linear-gradient(top, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/IMAG0075.jpg");
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/IMAG0075.jpg");
+	background-size: cover;	
+	background-attachment: fixed;
+}
+
+article ul {
+	margin-top: 0;
+}
+
+/* ********
+	FORM 
+******** */
+
+.tabgroup li {
+	display: inline-block;
+	text-align: center;
+	background-color: rgb(253,253,253);
+	padding: 10px;
+	font-weight: bolder;
+	border-radius: 10px;
+}
+
+.tabgroup li:hover {
+	text-shadow: 2px 2px 2px rgb(50,50,50);
+}
+
+.tabgroup a:hover {
+	color: #08300d;
+	text-decoration: none;
+}
+
+.box-wrap {
+	position: relative;
+	min-height: 860px;
+	padding: 0;
+}
+
+#loginTab, #registerTab {
+	position: absolute;
+	width: 100%;
+	background-color: rgb(253,253,253);
+	min-height: 860px;
+}
+
+#loginTab:target, #registerTab:target {
+	z-index: 1;
+}
+
+form {
+	width: 50%;
+	max-width: 50%;
+}
+
+form p {
+	margin-top: 0;
+}

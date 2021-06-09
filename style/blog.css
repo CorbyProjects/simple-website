@@ -1,0 +1,132 @@
+/* for blog-specific stuff */
+body {
+	background-color: black;
+	color: lime;
+	font-family: Lucinda Console, Consolas, Monospaced;
+}
+
+body > * {
+	border: 2px solid #fff;
+	-webkit-box-shadow: 0px;
+	        box-shadow: 0px;
+}
+
+header #colorful, #colorful > * {
+	-webkit-animation-name: headerColors;
+	-webkit-animation-duration: 30s;
+	-webkit-animation-iteration-count: infinite;
+	animation-name: headerColors;
+	animation-duration: 30s;
+	animation-iteration-count: infinite; 
+	background-color: black;
+	color: gray;
+}
+
+@-webkit-keyframes headerColors {
+	0% {background-color: #FF0000;}
+	15% {background-color: #FF7F00;}
+	30% {background-color: 	#FFFF00;}
+	45% {background-color: #00FF00;}
+	60% {background-color: #0000FF;}
+	75% {background-color: #4B0082;}
+	90% {background-color: 	#9400D3;}
+}
+
+@keyframes headerColors {
+	0% {background-color: #FF0000;}
+	15% {background-color: #FF7F00;}
+	30% {background-color: 	#FFFF00;}
+	45% {background-color: #00FF00;}
+	60% {background-color: #0000FF;}
+	75% {background-color: #4B0082;}
+	90% {background-color: 	#9400D3;}
+}
+
+h1 {
+	font-size: 6vw;
+	padding-top: .25em;
+	padding-bottom: .25em;
+}
+
+header p {
+	font-size: 3vw;	
+	padding-bottom: .75em;
+}
+
+@-webkit-keyframes textColors {
+	0% {background-color: #FF0000;}
+	15% {color: #FF7F00;}
+	30% {color: #FFFF00;}
+	45% {color: #00FF00;}
+	60% {color: #0000FF;}
+	75% {color: #4B0082;}
+	90% {color: #9400D3;}
+}
+
+@keyframes textColors {
+	0% {color: #FF0000;}
+	15% {color: #FF7F00;}
+	30% {color: #FFFF00;}
+	45% {color: #00FF00;}
+	60% {color: #0000FF;}
+	75% {color: #4B0082;}
+	90% {color: #9400D3;}
+}
+
+nav > * {
+	background-color: black;
+}
+
+nav li {
+	background-color: gray;
+}
+
+nav li > a {
+	-webkit-animation-name: textColors;
+	-webkit-animation-duration: 30s;
+	-webkit-animation-iteration-count: infinite;
+	animation-name: textColors;
+	animation-duration: 30s;
+	animation-iteration-count: infinite; 
+}
+
+section > *, article > *, main > * {
+	background-color: black;
+	border-top: 2px dashed #fff;
+}
+
+#lastPostArea {
+	-webkit-box-ordinal-group: 4;
+	    -ms-flex-order: 3;
+	        order: 3;
+}
+
+#lastPostArea img {
+	float: left;
+	border: 2px solid #fff;
+	margin-top: 31px;
+	max-height: 350px;
+	width: auto;
+}
+
+#lastPostArea p {
+	clear: left;
+}
+
+#postList {
+	-webkit-box-ordinal-group: 5;
+	    -ms-flex-order: 4;
+	        order: 4;
+}
+
+.flexContainer > div {
+	border: 1px solid #fff;
+	font-size: 12pt;
+	max-height: 400px;
+	overflow: hidden;
+}
+
+.flexContainer > div > img {
+	max-height: 150px;
+	max-width: 150px;
+}
