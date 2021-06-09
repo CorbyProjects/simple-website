@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<script src="https://use.fontawesome.com/d5684f47b0.js"></script>
+	
+	<meta name="description" content="Home page for Krystin's site of projects, information, and code">
+	<meta name="keywords" content="krystin, corby, puzzle game, bonzai tree log">
+	<meta name="robots" content="index">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Krystin Corby">
+	
+<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+	<link rel="stylesheet" type="text/css" href="style/style.css" media="all">
+	
+	<title>Scrambled Fish</title>
+</head>
+<body>
+
+	<header>
+		<h1>Scrambled Fish</h1>
+		<p>Welcome to <i>my</i> world</p>
+	</header>
+	
+	<nav>
+		<!-- add sticky top? some other page, bonsai -->
+		<a href="#navMenu"><i class="fa fa-bars" aria-hidden="true"></i></a>
+		<ul id="navMenu">
+			<li><a id="currentPage" href="home.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="puzzle.html">Puzzle Game</a></li>
+			<li><a href="bonsai.html">Bonsai Log</a></li>
+			<li><a href="">Close Menu</a></li>
+		</ul>
+	</nav>
+	
+	<main class="pic1">
+		<h2>Projects in this site</h2>
+		
+		<img id="info1" src="img/IMAG0227.jpg" class="thumb"></img>
+		<img id="info2" src="img/IMG_20160620_172711622.jpg" class="thumb"></img>
+		<img id="info3" src="img/20120817_092940.jpg" class="thumb"></img>
+		
+		<p id="infoCard1">Blog: I will document my adventures in web development across SharePoint, WordPress, and custom HTML/CSS/JavaScript-based sites. This is partially for fun stories, but mostly to keep a log of what I'm learning and monitor my progress.</p>
+		<p id="infoCard2">Puzzle: I want a web-based puzzle game where a user can upload a photo and turn it into a puzzle. Ideally they should be able to upload many pictures, save their progress in multiple puzzles, etc. There will be no ads. Ever.</p>
+		<p id="infoCard3">Bonsai Log: In pursuit of my gardening and bonsai hobby, there is a lot of information to keep track of in plant/bonsai development. This will provide a web-based app for gardeners to manage and store this information. That way I stop losing all of the papers.</p>
+	</main>
+	
+	<article class="pic3">
+		<h2>Contact Form</h2>
+		<form name="contactForm" method="post" enctype="text/plain" action="mailto:krystin.corby@gmail.com">
+			<p>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" placeholder="Name" required>
+			</p>
+			<p>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" placeholder="Email" required>
+			</p>
+			<p>
+				<label for="subject">Subject:</label>
+				<input type="text" id="subject" name="subject" value="Your perfect and awesome website">
+			</p>
+			<p>
+				<label for="body">Body:</label><br>
+				<textarea id="body" name="body" placeholder="Message" required rows="5" cols="48"></textarea>
+			</p>
+			<input type="submit" value="Send Email">
+		</form>
+	</article>
+	
+	<footer>
+		<p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2017 Krystin Corby</p>
+	</footer>
+	
+	<script src="javascript/showCardsJS.js"></script>
+
+<!-- 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="javascript/showCardsJS.js"></script> -->
+	
+	<noscript>
+	 For full functionality of this site it is necessary to enable JavaScript.
+	 Here are the <a href="http://www.enable-javascript.com/" target="_blank">
+	 instructions how to enable JavaScript in your web browser</a>.
+	</noscript>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<script src="https://use.fontawesome.com/d5684f47b0.js"></script>
+	
+	<meta name="description" content="Home page for Krystin's site of projects, information, and code">
+	<meta name="keywords" content="krystin, corby, puzzle game, bonzai tree log">
+	<meta name="robots" content="index">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Krystin Corby">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style/style.css" media="all">
+	
+	<title>Create Blog Post</title>
+</head>
+<body>
+
+	<header>
+		<h1>Scrambled Fish</h1>
+		<p>Welcome to <i>my</i> world</p>
+	</header>
+	
+	<nav>
+		<a href="#navMenu"><i class="fa fa-bars" aria-hidden="true"></i></a>
+		<ul id="navMenu">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="puzzle.html">Puzzle Game</a></li>
+			<li><a href="bonsai.html">Bonsai Log</a></li>
+			<li><a href="">Close Menu</a></li>
+		</ul>
+	</nav>
+	
+	<section class="pic2">
+		<form name="composePost" action="php/createPost.php" method="POST">
+			
+			<p>
+				<label for="title">Title: </label>
+				<input type="text" id="title" name="title">
+			</p>
+			<p>
+				<label for="date">Date: </label>
+				<input type="date" id="date" name="date">
+			</p>
+			<p>
+				<label for="content">Content: </label>
+				<textarea name="content" id="content" rows="30" cols="100">Enter post and all HTML tags here.</textarea>
+			</p>
+			<p>
+				<label for="iconPic">Icon Pic: </label>
+				<input type="text" id="iconPic" name="iconPic">
+			</p>
+			<p>
+				<label for="tags">Tags: </label>
+				<input type="text" id="tags" name="tags">
+			</p>
+			
+			<input type="submit" value="Publish Post">
+			<input type="reset" value="Reset">
+		</form>
+	</section>
+		
+	<footer>
+		<p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2017 Krystin Corby</p>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
